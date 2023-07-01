@@ -17,3 +17,12 @@
   top: 12%;
   width: 24px;
 }
+
+.hr-heading {
+  display: inline-block;
+  width: 3.5rem;
+  height: 0.125rem;
+  margin-top: 0.625rem;
+  border: none;
+  background-color: var(--bs-primary)
+}
