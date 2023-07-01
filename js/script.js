@@ -9,3 +9,21 @@ if (checkReplace !== null) {
     autoRun: true,
   })
 }
+
+function scroll() {
+  const navbar = document.querySelector('.navbar')
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-custom')
+      navbar.classList.add('bg-dark')
+    } else {
+      navbar.classList.remove('bg-dark')
+      navbar.classList.remove('navbar-custom')
+    }
+  })
+}
+
+
+// Event Listeners
+document.addEventListener('DOMContentLoaded', scroll)
