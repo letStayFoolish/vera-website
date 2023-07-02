@@ -33,3 +33,20 @@
   background-color: var(--bs-primary);
   opacity: 1;
 }
+
+.details .vertical-decoration {
+  top: 0;
+  left: 0;
+}
+
+.details-2 .vertical-decoration {
+  top: 5%;
+  right: 0;
+}
+
+// Tablets Screen
+@media(max-width: 992px) {
+  .xl-text {
+    font-size: 50px;
+  }
+}
