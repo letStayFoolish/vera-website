@@ -123,6 +123,16 @@
   margin-top: 20px;
 }
 
+.card-project {
+  cursor: pointer;
+}
+
+.project-modals .modal-dialog {
+  max-width: 1150px;
+  margin-top: 130px;
+  cursor: pointer;
+}
+
 // Tablets Screen
 @media(max-width: 992px) {
   .xl-text {
