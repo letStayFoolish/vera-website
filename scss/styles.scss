@@ -118,6 +118,11 @@
   }
 }
 
+.video-modal .modal-dialog {
+  max-width: 1150px;
+  margin-top: 20px;
+}
+
 // Tablets Screen
 @media(max-width: 992px) {
   .xl-text {

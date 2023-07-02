@@ -24,6 +24,30 @@ function scroll() {
   })
 }
 
+// Video Modal
+const videoBtn = document.querySelector('.video-btn')
+const videoModal = document.getElementById('videoModal')
+const video = document.getElementById('video')
+let videoSrc
+
+if (videoBtn !== null) {
+  videoBtn.addEventListener('click', () => {
+    videoSrc = videoBtn.getAttribute('data-bs-src')
+  })
+}
+
+if (videoModal !== null) {
+  videoModal.addEventListener('shown.bs.modal', () => {
+    video.setAttribute('src',
+      videoSrc + '?autoplay=1;modestbranding=1;showInfo=0'
+    )
+  })
+
+  videoModal.addEventListener('hide.bs.modal', () => {
+    video.setAttribute('src', videoSrc)
+  })
+}
+
 
 // Event Listeners
 document.addEventListener('DOMContentLoaded', scroll)
